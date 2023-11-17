@@ -74,7 +74,7 @@ defaults:
 
 languages: ["fr", "en","ar"]
 exclude_from_localizations: ["javascript", "images", "css"]
-default_locale_in_subfolder: true
+default_locale_in_subfolder: false
 
 # Exclude from processing.
 # The following items will not be processed, by default.
