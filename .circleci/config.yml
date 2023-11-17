@@ -2,7 +2,7 @@ version: 2
 jobs:
   checkout_code:
     docker:
-      - image: circleci/ruby:3.2
+      - image: cimg/ruby:3.2.2
 
     working_directory: ~/repo
 
@@ -15,7 +15,7 @@ jobs:
 
   bundle_dependencies:
     docker:
-      - image: circleci/ruby:3.2
+      - image: cimg/ruby:3.2.2
 
     working_directory: ~/repo
 
@@ -38,7 +38,7 @@ jobs:
 
   precompile:
     docker:
-      - image: circleci/ruby:3.2
+      - image: cimg/ruby:3.2.2
 
     working_directory: ~/repo
 
