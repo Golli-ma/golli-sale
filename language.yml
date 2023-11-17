@@ -1,0 +1,19 @@
+global:
+  arabic: arabic
+  english: english
+  french: french
+  openingHours: openingHours
+  paymentAccepted: paymentAccepted
+  currenciesAccepted: currenciesAccepted
+  Mo-Fr: Mo-Fr
+  Sa: Sa
+  Su: Su
+
+paymentAccepted:
+  Cash: Cash
+  Check: Check
+  CreditCard: CreditCard
+
+currenciesAccepted:
+  MAD: MAD
+  

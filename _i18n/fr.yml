@@ -1,0 +1,18 @@
+global:
+  arabic: Arabe
+  english: Anglais
+  french: Français
+  openingHours: Horaire de travail
+  paymentAccepted: Méthode(s) de paiement autorisée(s)
+  currenciesAccepted: Devise(s) acceptée(s)
+  Mo-Fr: Du lundi au vendredi
+  Sa: Samedi
+  Su: Dimanche
+
+paymentAccepted:
+  Cash: Cash
+  Check: Check
+  CreditCard: Carte de crédit
+  
+currenciesAccepted:
+  MAD: Dihram Marocain (MAD)

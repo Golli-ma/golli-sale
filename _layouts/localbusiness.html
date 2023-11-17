@@ -1,0 +1,44 @@
+---
+layout: default
+---
+
+{% assign arabic? = (site.lang == 'ar') %}
+{% assign types = site.types | where: 'name', page.businesstype | first %}
+{% if arabic? %} 
+<h1 dir="rtl">{{page.locales[site.lang]}} {{types.localesSingular[site.lang] }}</h1>
+
+{% else %}
+
+<h1>{{types.localesSingular[site.lang] }} {{page.locales[site.lang]}}</h1>
+
+
+{% endif %}
+
+<p>
+{% t global.openingHours %}: <br />
+{% assign len = page.openingHours | size %}
+{% for item in (1..len) %}
+ {% assign oh_locale = page.openingHours[item].days %}
+    {{  site.translations[site.lang].global[oh_locale]  }} : {{ page.openingHours[item].hours }}<br />
+{% endfor %}
+</p>
+
+<p>
+    {% t global.paymentAccepted %}: <br />
+    {% assign len = page.paymentAccepted | size %}
+    {% for item in (1..len) %}
+     {% assign pa_locale = page.paymentAccepted[item] %}
+        {{ site.translations[site.lang].paymentAccepted[pa_locale]   }}<br />
+    {% endfor %}
+</p>
+
+<p>
+    {% t global.currenciesAccepted %}: <br />
+    {% assign len = page.currenciesAccepted | size %}
+    {% for item in (1..len) %}
+      {% assign ca_locale = page.currenciesAccepted[item] %}
+      {{ site.translations[site.lang].currenciesAccepted[ca_locale] }}<br />
+    {% endfor %}
+</p>
+
+{{ content }}

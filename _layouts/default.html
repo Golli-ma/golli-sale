@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="{{ "/assets/css/styles.css" | prepend: site.baseurl_root  }}">
+
+  </head>
+  <body>
+
+  {% capture link1 %}{{ site.baseurl_root }}/en{{ page.url}}{% endcapture %}
+  {% capture link2 %}{{ site.baseurl_root }}/fr{{ page.url  }}{% endcapture %}
+  {% capture link3 %}{{ site.baseurl_root }}/ar{{ page.url}}{% endcapture %}
+
+
+    <a href="{{ link1 }}" {% if site.lang == "en" %} class="current"{% endif %}>{% t global.english %}</a>
+    <a href="{{ link2 }}" {% if site.lang == "fr" %} class="current"{% endif %}>{% t global.french %}</a>
+    <a href="{{ link3 }}" {% if site.lang == "ar" %} class="current"{% endif %}>{% t global.arabic %}</a>
+
+
+    {% include navigation.html %}
+    {{ content }}
+  </body>
+</html>
