@@ -45,6 +45,7 @@ collections:
     output: true
   cities:
     output: true
+
 defaults:
   - scope:
       path: ""
@@ -73,7 +74,7 @@ defaults:
 
 languages: ["fr", "en","ar"]
 exclude_from_localizations: ["javascript", "images", "css"]
-default_locale_in_subfolder: false
+default_locale_in_subfolder: true
 
 # Exclude from processing.
 # The following items will not be processed, by default.
