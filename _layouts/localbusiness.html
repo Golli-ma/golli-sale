@@ -2,7 +2,7 @@
 layout: default
 ---
 
-{% assign arabic? = (site.lang == 'ar') %}
+{% assign arabic? = site.lang == 'ar' %}
 {% assign types = site.types | where: 'name', page.businesstype | first %}
 {% if arabic? %} 
 <h1 dir="rtl">{{page.locales[site.lang]}} {{types.localesSingular[site.lang] }}</h1>
