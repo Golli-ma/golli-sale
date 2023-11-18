@@ -3,7 +3,7 @@ layout: default
 ---
 
 {% assign arabic? = site.lang == 'ar' %}
-{% assign types = site.types | where: 'name', page.businesstype | first %}
+{% assign types = site.types | where: 'short_name', page.businesstype | first %}
 {% if arabic? %} 
 <h1 dir="rtl">{{page.locales[site.lang]}} {{types.localesSingular[site.lang] }}</h1>
 
@@ -15,16 +15,16 @@ layout: default
 {% endif %}
 
 <p>
-{% t global.openingHours %}: <br />
+{% t properties.openingHours %}: <br />
 {% assign len = page.openingHours | size %}
 {% for item in (1..len) %}
  {% assign oh_locale = page.openingHours[item].days %}
-    {{  site.translations[site.lang].global[oh_locale]  }} : {{ page.openingHours[item].hours }}<br />
+    {{  site.translations[site.lang].openingHours[oh_locale]  }} : {{ page.openingHours[item].hours }}<br />
 {% endfor %}
 </p>
 
 <p>
-    {% t global.paymentAccepted %}: <br />
+    {% t properties.paymentAccepted %}: <br />
     {% assign len = page.paymentAccepted | size %}
     {% for item in (1..len) %}
      {% assign pa_locale = page.paymentAccepted[item] %}
@@ -33,7 +33,7 @@ layout: default
 </p>
 
 <p>
-    {% t global.currenciesAccepted %}: <br />
+    {% t properties.currenciesAccepted %}: <br />
     {% assign len = page.currenciesAccepted | size %}
     {% for item in (1..len) %}
       {% assign ca_locale = page.currenciesAccepted[item] %}

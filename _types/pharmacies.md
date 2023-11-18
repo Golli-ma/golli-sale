@@ -1,5 +1,7 @@
 ---
 name: pharmacies
+short_name: pharmacies
+
 localesSingular:
   fr: Pharmacie
   en: Pharmacy

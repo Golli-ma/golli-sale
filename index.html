@@ -4,6 +4,11 @@ title: Accueil
 nav_order: 0
 ---
 
-<h1>{{ "Hello World!" | downcase }}</h1>
+{% assign fiches = site.fiches | where_exp: "item", "item.name != 'index'" %}
+{% assign fiches_sorted = fiches | sort: "last_modified_at", 'last' %}
+{% for fiche in fiches_sorted | limit: 5 %}
+<a href="{% link {{fiche.path}} %}">{{fiche.title}}</a><br />
+
+{% endfor %}
 
 

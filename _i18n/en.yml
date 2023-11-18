@@ -2,10 +2,19 @@ global:
   arabic: Arabic
   english: English
   french: French
+
+properties:
   openingHours: Opening Hours
   paymentAccepted: Payment Method(s) Accepted
   currenciesAccepted: Currencies Accepted
+
+openingHours:
   Mo-Fr: Mo-Fr
+  Mo: Mo
+  Tu: Tu
+  We: We
+  Th: Th
+  Fr: Fr
   Sa: Sa
   Su: Su
 

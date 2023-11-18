@@ -33,7 +33,9 @@ theme: just-the-docs
 plugins:
   - jekyll-feed
   - jekyll-multiple-languages-plugin
+  - jekyll-last-modified-at
   - jekyll-sitemap
+
 
 collections:
   authors:
@@ -43,6 +45,8 @@ collections:
   pharmacies:
     output: true
   cities:
+    output: true
+  fiches:
     output: true
 
 search_enabled: true
