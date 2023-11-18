@@ -49,7 +49,15 @@ collections:
   fiches:
     output: true
 
+just_the_docs:
+  collections:
+    fiches:
+      name: "Fiches d'établissement"
+      nav_exclude: true
+
 search_enabled: true
+
+search.button: true
 
 search:
   # Split pages into sections that can be searched individually
