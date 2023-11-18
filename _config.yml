@@ -22,7 +22,7 @@ title: Golli
 email: elkassib.soufiane@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Golli est un catalogue de ville, parcourez votre ville quartier par quartier, établissement par établissement.
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/sale" # the subpath of your site, e.g. /blog
 url: "https://golli.ma" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  golli-ma
 logo: "/assets/images/logo-golli-ma-v1.png"
