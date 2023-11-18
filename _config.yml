@@ -18,14 +18,14 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Golli
+title: Golli Salé
 email: elkassib.soufiane@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Golli est un catalogue de ville, parcourez votre ville quartier par quartier, établissement par établissement.
+  Golli Salé est un catalogue de votre ville Salé, parcourez votre ville quartier par quartier, établissement par établissement.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://golli.ma/sale" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  golli-ma
-logo: "/assets/images/logo-golli-ma-v1.png"
+logo: "/assets/images/logo-golli-ma-sale.png"
 # Build settings
 theme: just-the-docs
 
