@@ -29,6 +29,7 @@ logo: "/assets/images/logo-golli-ma-sale.png"
 footer_content: Golli copyright 2023
 # Build settings
 theme: just-the-docs
+color_scheme: golli
 
 plugins:
   - jekyll-feed
@@ -109,7 +110,7 @@ defaults:
 
 
 languages: ["fr", "en","ar"]
-exclude_from_localizations: ["assets","javascript",'js', "images", "css"]
+exclude_from_localizations: ["assets","javascript",'js', "images", "css","_sass"]
 default_locale_in_subfolder: false
 
 # Exclude from processing.
