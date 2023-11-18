@@ -1,0 +1,9 @@
+---
+layout: default
+---
+
+{% assign children = site.fiches | where: "parent", page.title %}
+
+{% for child in children %}
+<a href="{% link {{child.path}} %}">{{child.title}}</a><br />
+{% endfor %}
