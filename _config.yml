@@ -26,6 +26,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://golli.ma/sale" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  golli-ma
 logo: "/assets/images/logo-golli-ma-sale.png"
+footer_content: Golli copyright 2023
 # Build settings
 theme: just-the-docs
 
