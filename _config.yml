@@ -70,10 +70,9 @@ search:
   # Supports true or false (default)
   button: false
 
-just_the_docs:
-  collections:
-    pharmacies:
-      name: pharmacies
+aux_links:
+  "< Revenir à Golli":
+    - "https://golli.ma/"
 
 defaults:
   - scope:
